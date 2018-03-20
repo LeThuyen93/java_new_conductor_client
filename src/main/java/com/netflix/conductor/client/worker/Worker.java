@@ -88,9 +88,7 @@ public interface Worker {
 	 * 
 	 * @return Number of tasks to be polled for.
 	 */
-	public default int getPollCount() {
-		return PropertyFactory.getInteger(getTaskDefName(), "pollCount", 1);
-	}
+	public int getPollCount();
 	
 	/**
 	 * 
@@ -109,14 +107,14 @@ public interface Worker {
 		return PropertyFactory.getInteger(getTaskDefName(), "longPollTimeout", 100);
 	}
 	
-	public static Worker create(String taskType, Function<Task, TaskResult> executor){
+	public static Worker create(String taskType, Function<Task, TaskResult> executor, int pollCount){
 		return new Worker() {
 			
 			@Override
 			public String getTaskDefName() {
 				return taskType;
 			}
-			
+
 			@Override
 			public TaskResult execute(Task task) {
 				return executor.apply(task);
@@ -125,6 +123,11 @@ public interface Worker {
 			@Override
 			public boolean paused() {
 				return Worker.super.paused();
+			}
+
+			@Override
+			public int getPollCount() {
+				return pollCount;
 			}
 		};
 	}
