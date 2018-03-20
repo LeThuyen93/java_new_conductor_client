@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.thuyenlv.conductor.common.metadata.workflow;
+package com.netflix.conductor.common.metadata.workflow;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.thuyenlv.conductor.common.metadata.workflow.WorkflowTask.Type;
+import com.netflix.conductor.common.metadata.workflow.WorkflowTask.Type;
 
 public class DynamicForkJoinTask {
 	private String taskName;

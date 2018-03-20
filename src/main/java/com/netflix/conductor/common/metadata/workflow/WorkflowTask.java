@@ -16,7 +16,7 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.metadata.workflow;
+package com.netflix.conductor.common.metadata.workflow;
 
 import java.util.Collection;
 import java.util.HashMap;

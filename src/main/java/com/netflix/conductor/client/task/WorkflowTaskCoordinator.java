@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.thuyenlv.conductor.client.task;
+package com.netflix.conductor.client.task;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -30,15 +30,15 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import com.thuyenlv.conductor.client.http.TaskClient;
-import com.thuyenlv.conductor.client.worker.PropertyFactory;
-import com.thuyenlv.conductor.client.worker.Worker;
-import com.thuyenlv.conductor.common.metadata.tasks.TaskResult;
+import com.netflix.conductor.client.http.TaskClient;
+import com.netflix.conductor.client.worker.PropertyFactory;
+import com.netflix.conductor.client.worker.Worker;
+import com.netflix.conductor.common.metadata.tasks.Task;
+import com.netflix.conductor.common.metadata.tasks.TaskResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.netflix.appinfo.InstanceInfo.InstanceStatus;
-import com.thuyenlv.conductor.common.metadata.tasks.Task;
 import com.netflix.discovery.EurekaClient;
 import com.netflix.servo.monitor.Stopwatch;
 

@@ -16,7 +16,7 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.client.http;
+package com.netflix.conductor.client.http;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,12 +25,12 @@ import java.util.Map;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.QueryParam;
 
-import com.thuyenlv.conductor.common.metadata.workflow.RerunWorkflowRequest;
-import com.thuyenlv.conductor.common.metadata.workflow.StartWorkflowRequest;
-import com.thuyenlv.conductor.common.metadata.workflow.WorkflowDef;
-import com.thuyenlv.conductor.common.run.SearchResult;
-import com.thuyenlv.conductor.common.run.Workflow;
-import com.thuyenlv.conductor.common.run.WorkflowSummary;
+import com.netflix.conductor.common.metadata.workflow.WorkflowDef;
+import com.netflix.conductor.common.run.SearchResult;
+import com.netflix.conductor.common.run.Workflow;
+import com.netflix.conductor.common.metadata.workflow.RerunWorkflowRequest;
+import com.netflix.conductor.common.metadata.workflow.StartWorkflowRequest;
+import com.netflix.conductor.common.run.WorkflowSummary;
 import com.sun.jersey.api.client.ClientHandler;
 import com.sun.jersey.api.client.GenericType;
 import com.sun.jersey.api.client.config.ClientConfig;

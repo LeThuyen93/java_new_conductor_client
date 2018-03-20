@@ -16,7 +16,7 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.client.http;
+package com.netflix.conductor.client.http;
 
 import java.net.URI;
 import java.util.Collection;

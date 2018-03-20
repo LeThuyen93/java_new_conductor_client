@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.thuyenlv.conductor.client.http;
+package com.netflix.conductor.client.http;
 
 import java.util.List;
 
-import com.thuyenlv.conductor.common.metadata.tasks.Task;
-import com.thuyenlv.conductor.common.metadata.tasks.TaskDef;
-import com.thuyenlv.conductor.common.metadata.tasks.TaskResult;
+import com.netflix.conductor.common.metadata.tasks.Task;
+import com.netflix.conductor.common.metadata.tasks.TaskDef;
+import com.netflix.conductor.common.metadata.tasks.TaskResult;
 import com.sun.jersey.api.client.ClientHandler;
 import com.sun.jersey.api.client.GenericType;
 import com.sun.jersey.api.client.config.ClientConfig;

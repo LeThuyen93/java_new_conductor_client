@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.thuyenlv.conductor.client.worker;
+package com.netflix.conductor.client.worker;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.function.Function;
 
-import com.thuyenlv.conductor.common.metadata.tasks.Task;
-import com.thuyenlv.conductor.common.metadata.tasks.TaskResult;
+import com.netflix.conductor.common.metadata.tasks.Task;
+import com.netflix.conductor.common.metadata.tasks.TaskResult;
 
 /**
  * 

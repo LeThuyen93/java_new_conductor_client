@@ -16,7 +16,7 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.metadata;
+package com.netflix.conductor.common.metadata;
 
 /**
  * @author Viren

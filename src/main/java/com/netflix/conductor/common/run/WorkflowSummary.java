@@ -16,13 +16,11 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.run;
+package com.netflix.conductor.common.run;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
-
-import com.thuyenlv.conductor.common.run.Workflow.WorkflowStatus;
 
 /**
  * @author Viren
@@ -49,7 +47,7 @@ public class WorkflowSummary {
 	
 	private String endTime;
 	
-	private WorkflowStatus status;
+	private Workflow.WorkflowStatus status;
 	
 	private String input;
 	
@@ -137,7 +135,7 @@ public class WorkflowSummary {
 	/**
 	 * @return the status
 	 */
-	public WorkflowStatus getStatus() {
+	public Workflow.WorkflowStatus getStatus() {
 		return status;
 	}
 

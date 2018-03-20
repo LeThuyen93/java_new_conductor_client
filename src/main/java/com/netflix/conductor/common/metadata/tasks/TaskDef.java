@@ -16,14 +16,14 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.metadata.tasks;
+package com.netflix.conductor.common.metadata.tasks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.thuyenlv.conductor.common.metadata.Auditable;
+import com.netflix.conductor.common.metadata.Auditable;
 
 /**
  * @author Viren

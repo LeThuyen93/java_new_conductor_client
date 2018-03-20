@@ -16,12 +16,10 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.metadata.events;
+package com.netflix.conductor.common.metadata.events;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import com.thuyenlv.conductor.common.metadata.events.EventHandler.Action;
 
 /**
  * @author Viren
@@ -45,7 +43,7 @@ public class EventExecution {
 	
 	private Status status;
 	
-	private Action.Type action;
+	private EventHandler.Action.Type action;
 	
 	private Map<String, Object> output = new HashMap<>();
 
@@ -152,7 +150,7 @@ public class EventExecution {
 	/**
 	 * @return the action
 	 */
-	public Action.Type getAction() {
+	public EventHandler.Action.Type getAction() {
 		return action;
 	}
 
@@ -160,7 +158,7 @@ public class EventExecution {
 	 * @param action the action to set
 	 * 
 	 */
-	public void setAction(Action.Type action) {
+	public void setAction(EventHandler.Action.Type action) {
 		this.action = action;
 	}
 

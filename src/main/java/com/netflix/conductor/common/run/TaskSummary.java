@@ -16,14 +16,13 @@
 /**
  * 
  */
-package com.thuyenlv.conductor.common.run;
+package com.netflix.conductor.common.run;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-import com.thuyenlv.conductor.common.metadata.tasks.Task;
-import com.thuyenlv.conductor.common.metadata.tasks.Task.Status;
+import com.netflix.conductor.common.metadata.tasks.Task;
 
 /**
  * @author Viren
@@ -48,7 +47,7 @@ public class TaskSummary {
 	
 	private String endTime;
 	
-	private Status status;
+	private Task.Status status;
 	
 	private String reasonForIncompletion;
 	
@@ -187,7 +186,7 @@ public class TaskSummary {
 	/**
 	 * @return the status
 	 */
-	public Status getStatus() {
+	public Task.Status getStatus() {
 		return status;
 	}
 
@@ -195,7 +194,7 @@ public class TaskSummary {
 	 * @param status the status to set
 	 * 
 	 */
-	public void setStatus(Status status) {
+	public void setStatus(Task.Status status) {
 		this.status = status;
 	}
 
